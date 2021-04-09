@@ -1,0 +1,9 @@
+body {
+    background-color: #E5E5E5;
+}
+
+@media (min-width: 1200px) {
+#how-it-works {
+    margin: 5rem;
+}
+}

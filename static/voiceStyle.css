@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+.row {
+  height: 100vh;
+}
+.logo-cont {
+  background: #374988;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-cont .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-cont .logo .logo-img {
+  width: 129px;
+  height: 129px;
+}
+.logo-cont .logo .logo-name {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #fff;
+}
+.vocal-guide {
+  position: relative;
+}
+.vocal-guide .info {
+  width: 70%;
+  margin: 1.5rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vocal-guide .info h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.vocal-guide .info p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  color: rgba(28, 37, 68, 0.75);
+  text-align: center;
+}
+.vocal-guide .speak-icon {
+  display: flex;
+  margin: 2.5rem auto;
+  height: 35%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.vocal-guide .speak-icon button {
+  outline: none;
+  background: none;
+  border: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.vocal-guide .speak-icon a .microphone-img {
+  width: 130px;
+  height: 130px;
+}
+.vocal-guide .speak-icon .turn-on {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #1c2544;
+  text-decoration: none;
+  transition: 300ms ease-in-out;
+}
+.vocal-guide .speak-icon .turn-on:hover {
+  opacity: 0.6;
+}
+.skip-btn {
+  position: absolute;
+  bottom: 7%;
+  right: 7%;
+  transition: 300ms ease-in-out;
+}
+.skip-btn:hover {
+  transform: scale(1.2);
+}
+div#languagechoice {
+  margin-top: 10%;
+}
+.modal-header {
+  padding: 0;
+}
+.modal-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #374988;
+  color: #fff;
+  margin: 0;
+  padding: 0.6rem;
+  text-align: center;
+  height: 77px;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-body p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.modal-btn {
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 196px;
+  height: 60px;
+  background: #374988;
+  border-radius: 8px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.form-group {
+  width: 100%;
+}
+.form-group .form-check {
+  width: 166px;
+  background: rgba(188, 194, 215, 0.35);
+  border: 1px solid rgba(55, 73, 136, 0.25);
+  border-radius: 30px;
+  height: 44px;
+  position: relative;
+  margin: 1rem auto;
+}
+.form-group .form-check input {
+  position: absolute;
+  left: 20%;
+  top: 13%;
+  width: 17px;
+  height: 17px;
+  background: #374988;
+  color: #374988;
+  border-radius: 50%;
+}
+.form-group .form-check label {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: right;
+  color: #374988;
+}
+@media only screen and (max-width: 761px) {
+  .logo-cont {
+    display: none;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .vocal-guide .info {
+    width: 100%;
+    margin: 2.5rem auto;
+  }
+  .vocal-guide .info h1 {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0em;
+  }
+  .vocal-guide .info p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .vocal-guide .speak-icon {
+    height: 25%;
+  }
+  .vocal-guide .speak-icon a .microphone-img {
+    width: 80px;
+    height: 80px;
+  }
+  .vocal-guide .speak-icon .turn-on {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+}

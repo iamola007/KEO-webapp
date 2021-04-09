@@ -1,0 +1,594 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* max-height: 100vh; */
+}
+
+.container {
+  /* max-height: 100%; */
+  height: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.blue {
+  color: #374988;
+}
+
+.light-blue {
+  color: #0d6ca2;
+}
+
+.green {
+  color: #0da237;
+}
+
+.yellow {
+  color: #faa425;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.pink {
+  color: #c62874;
+}
+
+.transaction-history-mobile {
+  display: none;
+}
+/* Left-Side Navigation */
+
+.side-nav {
+  background-color: #374988;
+  height: 600px;
+  min-height: 100%;
+  width: 200px;
+  color: #fff;
+  text-align: left;
+  position: relative;
+  padding: 20px 0;
+}
+
+.side-nav i {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.side-nav li {
+  min-width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 30px;
+  margin-top: 20px;
+}
+
+.side-nav-bottom {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  align-items: center;
+  padding: 5px 30px;
+}
+
+.logo img {
+  margin-right: 5px;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* End of Side Navigation STyling */
+
+/* Main Section Dashboard */
+
+.main-section {
+  padding: 20px 40px 20px 60px;
+  background-color: #ededf1;
+  flex-grow: 2;
+}
+
+.top {
+  justify-content: space-between;
+  align-items: center;
+}
+#mobile-side-nav {
+  display: none;
+}
+
+/* Search Box Styling */
+
+.search {
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 3px;
+}
+
+.search input {
+  border: none;
+  padding-left: 8px;
+  font-size: 12px;
+}
+
+.search button {
+  height: 24px;
+  width: 24px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  background-color: #374988;
+  text-align: center;
+}
+/* End of Search Box Styling */
+
+/* Notification and User Icon */
+
+.user {
+  align-items: center;
+}
+
+.user .far {
+  margin-right: 20px;
+  color: #0d6ca2;
+}
+
+.user-icon {
+  color: #fff;
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #374988;
+}
+
+.user-icon p {
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-section h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Account Information Section */
+
+.account-info {
+  background-color: #374988;
+  color: #fff;
+  border-radius: 8px;
+  margin: 10px 20px 10px 0;
+  padding: 20px 25px;
+  width: 60%;
+}
+
+.balance,
+.account-name {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.account-balance {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+/* Fund Account */
+.fund-account {
+  background-color: #fff;
+  margin: 10px 0px 10px 0;
+  border-radius: 8px;
+  padding: 20px 25px;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 2;
+}
+
+.fund-account i,
+.quick-links i {
+  font-size: 20px;
+  padding: 6px 0;
+  border-radius: 50%;
+  text-align: center;
+  height: 34px;
+  width: 34px;
+}
+
+.fund-account i {
+  color: #ccd2e3;
+  background-color: #0da237;
+}
+.fund-account p {
+  font-size: 14px;
+}
+/* End of Fund Account Box */
+
+.quick-links {
+  background-color: #fff;
+  border-radius: 8px;
+  flex-grow: 1;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 150px;
+}
+
+.transfer i {
+  background-color: #f4d4e3;
+}
+
+.recharge i {
+  background-color: #cfe2ec;
+}
+
+.pay-bills i {
+  background-color: #feedd3;
+}
+
+/* Transaction History */
+
+.transaction-history table {
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 0;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border-bottom: 2px solid #ededf1;
+  padding: 7px 20px;
+}
+
+td:last-child,
+th:last-child {
+  border-right: 0;
+}
+
+tr:hover {
+  background-color: #ededf1;
+  cursor: pointer;
+}
+tr:first-child:hover {
+  background-color: #fff;
+}
+
+.fund-account:hover,
+.transfer:hover,
+.recharge:hover,
+.pay-bills:hover {
+  cursor: pointer;
+  background-color: rgba(207, 226, 236, 0.15);
+}
+
+/* Modal Window and Pop-Up General Stying */
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+#pop-up {
+  width: 500px;
+  height: fit-content;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 8px;
+}
+
+.modal form {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.modal input[type="text"],
+.modal select {
+  position: relative;
+  margin: 5px auto 20px;
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  font-size: 14px;
+}
+
+.modal input[type="submit"] {
+  width: 150px;
+  position: relative;
+  border: none;
+  height: 35px;
+  padding: 5px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 6px;
+}
+
+#pop-up i {
+  color: #e50e0e;
+  background-color: #f4d4e3;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 2px 0;
+  border-radius: 50%;
+  text-align: center;
+  height: 26px;
+  width: 26px;
+}
+
+#pop-up .title {
+  color: #fff;
+  padding: 15px 20px;
+  font-weight: 400;
+  border-radius: 8px 8px 0 0;
+  justify-content: space-between;
+}
+
+/* Recharge Pop-Up Color Styling */
+
+#rechargeModal .title {
+  background: #0d6ca2;
+}
+
+#rechargeModal input[type="submit"] {
+  background: #0d6ca2;
+}
+
+/* Transfer Pop-Up Color Styling */
+
+#transferModal .title {
+  background: #cc2593;
+}
+
+#transferModal input[type="submit"] {
+  background: #cc2593;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Left-Side Navigation */
+
+  .side-nav {
+    width: 200px;
+    padding: 7px 0;
+  }
+
+  .side-nav i {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+
+  .side-nav li {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .side-nav-bottom {
+    bottom: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+
+  /* Main Section Dashboard */
+
+  .main-section {
+    padding: 20px;
+  }
+
+  /* Search Box Styling */
+
+  .search {
+    padding: 2px;
+  }
+
+  .search input {
+    font-size: 10px;
+  }
+
+  .search button {
+    height: 18px;
+    width: 18px;
+  }
+  /* End of Search Box Styling */
+
+  /* Notification ans User Icon */
+
+  .user .far {
+    margin-right: 15px;
+  }
+
+  .user-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .user-icon p {
+    font-size: 16px;
+  }
+
+  .main-section h3 {
+    font-size: 14px;
+    margin-top: 9px;
+  }
+
+  /* Account Information Section */
+
+  .account-info {
+    margin: 7px 15px 7px 0;
+    padding: 10px 15px;
+  }
+
+  .balance,
+  .account-name {
+    font-size: 12px;
+  }
+
+  .account-balance {
+    font-size: 20px;
+    margin: 7px 0;
+  }
+
+  /* Fund Account */
+  .fund-account {
+    margin: 7px 0px 7px 0;
+    padding: 10px 15px;
+  }
+
+  .fund-account .fas,
+  .quick-links .fas {
+    font-size: 12px;
+    padding: 6px 0;
+    height: 24px;
+    width: 24px;
+  }
+
+  .fund-account p {
+    font-size: 12px;
+  }
+  /* End of Fund Account Box */
+
+  .quick-links {
+    font-size: 12px;
+    margin-top: 7px;
+    height: 80px;
+  }
+
+  /* Transaction History */
+
+  .transaction-history table {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 7px;
+  }
+
+  /* Modal Window and Pop-Up General Stying */
+
+  #pop-up {
+    width: 400px;
+  }
+
+  .modal input[type="text"],
+  .modal select {
+    margin: 5px auto 15px;
+    height: 25px;
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+
+  .modal label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #side-nav {
+    display: none;
+    padding: 10px 0;
+    width: 300px;
+  }
+  .side-nav i {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+
+  .search {
+    display: none;
+  }
+
+  #mobile-side-nav {
+    display: block;
+  }
+
+  .transaction-history {
+    display: none;
+  }
+  .transaction-history-mobile {
+    display: flex;
+    padding: 0px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  .transaction-history-mobile .flex-row {
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px #ededf1 solid;
+  }
+
+  .transaction-history-mobile .flex-row:last-of-type {
+    border-bottom: 0;
+  }
+
+  .transaction-history-mobile h4 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .transaction-history-mobile p {
+    font-size: 12px;
+  }
+
+  #pop-up {
+    width: 90%;
+  }
+}

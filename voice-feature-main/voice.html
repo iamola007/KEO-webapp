@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="/static/style.css" rel="stylesheet" />
+    <title>Voice Feature</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-4 logo-cont">
+          <div class="logo">
+            <img
+              src="/assets/Keo logo white 1.png"
+              alt="logo"
+              class="logo-img"
+            />
+
+            <span class="logo-name">KEO WALLET</span>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="languagechoice"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="languagechoiceLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="languagechoiceLabel">
+                  Select Language
+                </h5>
+              </div>
+              <div class="modal-body">
+                <p>Select your language of choice:</p>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck1"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck1">
+                      Hausa
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck2"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck2">
+                      Igbo
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck3"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck3">
+                      Yoruba
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn modal-btn"><a style="color: white;" href="dashboard.html">Continue</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-12 vocal-guide">
+          <div class="info">
+            <h1>Vocal Guide</h1>
+            <p>
+              KEO wallet enables you to carry out transactions with our vocal
+              guide in any language of your choice. Turn on vocal guide to
+              continue...
+            </p>
+          </div>
+          <div class="speak-icon">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              data-toggle="modal"
+              data-target="#languagechoice"
+            >
+              <a href="#"
+                ><img
+                  class="microphone-img"
+                  src="/assets/Group 2.png"
+                  alt="microphone icon"
+              /></a>
+              <a href="#" class="turn-on">Turn on Vocal Guide</a>
+            </button>
+          </div>
+          <a href="#" class="skip-btn"
+            ><img src="/assets/Group 8.png" alt="skip"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

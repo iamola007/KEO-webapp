@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato");
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #E5E5E5;
+    width: 100%;
+}
+/* FEATURES */
+
+.feature-texts {
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 132.1%;
+/* identical to box height, or 24px */
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #374988;
+}
+
+.nav-link {
+  margin-right: 2rem;
+}
+
+.feature-notes {
+    justify-content: center;
+    align-items: center;
+}
+
+/* header styles*/
+
+@media (max-width: 576px) {
+.feature-list p {
+    text-align: center;
+}
+
+.feature-list h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+.feature-items {
+  margin-left: -4rem;
+}
+#feature-img{
+  margin-top: 4rem;
+}
+#footerSection {
+  text-align: center;
+  align-items: center;
+}
+#download-app {
+  margin-left: 1.5rem;
+}
+#getInTouch {
+  text-align: center;
+  align-items: center;
+}
+#icons {
+  align-items: center;
+  margin-left: 5px;
+}
+#bottomSection {
+  align-items: center;
+  justify-content: center;
+  margin-left: 0%;
+  margin-top: -20rem;
+}
+#appleStore {
+  margin-left: 0rem;
+  align-self: flex-start;
+}
+}
+
+@media (max-width: 768px) {
+   .feature-list p {
+        text-align: center;
+    }
+    
+    .feature-list h3 {
+        text-align: center;
+    }
+#navbarNav {
+    font-size: large;
+    color: #374988; 
+    font-weight: bold;
+}
+.appIcons{
+    align-items: center;
+    justify-content: center;
+}
+
+#appleStore {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+#playStore {
+    margin-left: -1rem;
+}
+.feature-list p {
+  text-align: center;
+}
+
+.feature-list h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+.feature-items {
+margin-left: -4rem;
+}
+#feature-img{
+margin-top: 4rem;
+}
+#footerSection {
+text-align: center;
+align-items: center;
+}
+#download-app {
+margin-left: 1.5rem;
+}
+#getInTouch {
+text-align: center;
+align-items: center;
+}
+#icons {
+align-items: center;
+margin-left: 5px;
+}
+#bottomSection {
+align-items: center;
+justify-content: center;
+margin-left: 0%;
+margin-top: 25rem;
+}
+
+}
+@media (min-width: 1200px) {
+ 
+}

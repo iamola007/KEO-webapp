@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="onboardingstyle.css" />
+    <script src="script.js"></script>
+    <title>Onboarding Page</title>
+  </head>
+  <body>
+    <div class="onboarding-container">
+      <div id="welcome-page">
+        <img
+          src="https://res.cloudinary.com/ioluwamichael/image/upload/v1617310730/Wallet-rafiki_dtyceo.png"
+          alt=""
+        />
+        <h3>Keep your money safe</h3>
+        <p>We understand you</p>
+        <button onclick="getStarted()">Get Started</button>
+        <p class="account">
+          Already have an account?
+          <span class="log-in"><a href="#">Log In</a></span>
+        </p>
+      </div>
+      <div id="contain">
+        <div class="mySlides home fade">
+          <img src="img/Authentication-rafiki (1).png" alt="" />
+          <h2>Authentication</h2>
+          <p>
+            To ensure wallet security, on opening the app, your identity is verified by asking you to fill in your password and mobile phone number which is compared with the database of the authorized user’s information.
+          </p>
+          <div class="nav-btns" style="text-align: center">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <div class="bottom-nav">
+            <a href="dashboard.html">Skip</a>
+            <a style="font-weight: 700" href="#" onclick="currentSlide(2)"
+              >Next</a
+            >
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <img src="img/Video tutorial-amico.png" alt="" />
+          <h2>Vocal guide</h2>
+          <p>
+            Immediately after registeration, you have an option to turn on the vocal feature which allows us guide you through the whole app interface and carry out necessary transactions. You can also switch between languages.
+          </p>
+          <div class="nav-btns" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot active" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <div class="bottom-nav">
+            <a href="dashboard.html">Skip</a>
+            <a style="font-weight: 700" href="#" onclick="currentSlide(3)"
+              >Next</a
+            >
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <img src="img/Wallet-rafiki.png" alt="" />
+          <h2>Achieve saving goals</h2>
+          <p>
+            You are able to fund your account and put away a certain percentage evertime you put money in your wallet.
+          </p>
+          <div class="nav-btns" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot active" onclick="currentSlide(3)"></span>
+          </div>
+          <div class="bottom-nav">
+            <button><a href="voice.html">Continue</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

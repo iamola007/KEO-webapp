@@ -1,0 +1,42 @@
+.modal-dialog-centered {
+    align-items: flex-end;
+  }
+  
+  .modal-dialog {
+    margin: 0 auto;
+  }
+  
+  .modal-dialog-centered {
+    min-height: calc(100% - 0rem);
+  }
+  
+  .airtimeBtn {
+    margin-top: 1.5rem !important;
+    margin-bottom: 3rem !important;
+  }
+  
+  .modal-content {
+    border: none;
+  }
+  
+  @media (min-width: 578px) {
+    button {
+      max-width: 187px !important;
+    }
+  
+    .modal-dialog-centered {
+      align-items: center;
+    }
+  
+    .modal-dialog {
+      margin: 0 auto;
+    }
+  
+    .modal-dialog-centered {
+      min-height: calc(100% - 1rem);
+    }
+  
+    .airtimeBtn {
+      margin-bottom: 0rem !important;
+    }
+  }
