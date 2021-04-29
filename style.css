@@ -29,11 +29,18 @@ color: #374988;
     align-items: center;
 }
 
+footer li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
 /* header styles*/
 
 @media (max-width: 576px) {
 .feature-list p {
     text-align: center;
+    font-size: 14px !important;
 }
 
 .feature-list h3 {
@@ -52,16 +59,35 @@ h1 {
 #feature-img{
   margin-top: 4rem;
 }
-#contact-us {
-  margin-left: -3.5rem;
-}
 
+#hero {
+margin-left: 8rem !important;
+}
 
 #bottomSection {
   align-items: center;
   justify-content: center;
   margin-left: 0%;
   margin-top: -20rem;
+}
+
+#services {
+  margin: 0rem !important;
+}
+
+.bottom-download{
+  margin-left: 4rem;
+}
+.header-app-download-icons {
+  justify-self: center; 
+  align-self: center;
+  margin-left: 2rem !important;
+}
+.footer-lists-heading {
+  font-size: 24px !important;
+}
+footer li {
+ font-size: 14px !important;
 }
 
 }
